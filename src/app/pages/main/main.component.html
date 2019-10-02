@@ -1,0 +1,17 @@
+<div class="container h-100">
+    <div class="row h-100 align-items-center justify-content-center">
+        <div class="row justify-content-center col-12">
+            <div class="row justify-content-center col-12">
+                <button class="w-50" mat-raised-button (click)="onGetUser()" color="primary">Get User</button>
+            </div>
+            <div style="margin-top: 1em;" class="row justify-content-center col-12"
+                [style.visibility]="(userEmail == null) ? 'hidden' : 'visible'">
+                <h1>Email: {{userEmail}}</h1>
+            </div>
+
+            <div style="margin-top: 1em;" class="row justify-content-center col-12">
+                <button class="w-50" mat-raised-button (click)="onLogout()" color="primary">Log Out</button>
+            </div>
+        </div>
+    </div>
+</div>
